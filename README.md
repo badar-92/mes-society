@@ -229,7 +229,7 @@ This project is licensed under the [Your License] - see the LICENSE file for det
 ## 🆘 Support
 
 For support and documentation:
-- Email: support@mes-society.edu
+- Email: mesuolofficial@gmail.com
 - Documentation: [Link to Documentation]
 - Issue Tracker: [GitHub Issues Link]
 
@@ -242,6 +242,6 @@ For support and documentation:
 
 ---
 
-**Live Demo**: [https://mesuol.xo.je/mes-society/public/](https://mesuol.xo.je/mes-society/public/)
+**Live Demo**: [MES UOL ](https://mesuol.xo.je/mes-society/public/)
 
 *Built by BADAR AHMAD for the Mechanical Engineering Society*
