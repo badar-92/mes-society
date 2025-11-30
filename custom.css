@@ -1,0 +1,610 @@
+/* MES Society Website Custom Styles - Professional Header & Mobile Offcanvas */
+/* CLEANED VERSION - Feed features removed */
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --accent-color: #FF6600;
+    --light-gray: #f8f9fa;
+    --dark-gray: #6c757d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* FIXED: Professional Header - Not Too Large */
+.navbar {
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--accent-color);
+    color: white !important;
+}
+
+/* FIXED: Hero Section - Balanced Size */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #333 100%);
+    color: white;
+    padding: 40px 0;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--accent-color), #ff8533) !important;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 1.25rem;
+}
+
+/* Buttons */
+.btn-accent { 
+    background-color: var(--accent-color); 
+    border-color: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #e55a00;
+    border-color: #e55a00;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+}
+
+/* NEW: Offcanvas Sidebar Styles */
+.offcanvas-sidebar {
+    background: var(--light-gray);
+    border-right: 1px solid #dee2e6;
+}
+
+.offcanvas-sidebar .nav-link {
+    color: var(--dark-gray);
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.offcanvas-sidebar .nav-link i {
+    margin-right: 0.75rem;
+    width: 20px;
+    text-align: center;
+}
+
+.offcanvas-sidebar .nav-link:hover,
+.offcanvas-sidebar .nav-link.active {
+    background: var(--accent-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Mobile Sidebar Toggle Button */
+.sidebar-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1060;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 15px rgba(255,102,0,0.3);
+    display: none;
+}
+
+/* Team Section */
+.team-card {
+    text-align: center;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+    border-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.1);
+}
+
+/* Utility Classes */
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-secondary { background-color: var(--secondary-color) !important; }
+.bg-accent { background-color: var(--accent-color) !important; }
+.text-accent { color: var(--accent-color) !important; }
+.border-accent { border-color: var(--accent-color) !important; }
+
+/* Desktop Sidebar (Regular) */
+.desktop-sidebar {
+    background: var(--light-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.desktop-sidebar .nav-link {
+    color: var(--dark-gray);
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-sidebar .nav-link i {
+    margin-right: 0.75rem;
+    width: 20px;
+    text-align: center;
+}
+
+.desktop-sidebar .nav-link:hover,
+.desktop-sidebar .nav-link.active {
+    background: var(--accent-color);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #333 100%);
+    color: white;
+    padding: 40px 0;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Touchpad and Laptop Cursor Fixes */
+/* Prevent accidental hover triggers on table rows */
+.table tbody tr {
+    cursor: default !important;
+}
+
+/* Improve dropdown interactions for touchpads */
+.dropdown-menu {
+    margin-top: 0.125rem !important;
+}
+
+.btn-group .dropdown-toggle {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+/* Prevent hover effects from causing layout shifts */
+.btn, .dropdown-item, .nav-link {
+    transition: all 0.2s ease !important;
+}
+
+/* Fix for table action buttons */
+.table .btn-group {
+    position: relative;
+    z-index: 5;
+}
+
+/* Prevent modal triggering on hover */
+[data-bs-toggle="modal"] {
+    cursor: pointer;
+}
+
+/* Improved touchpad dropdown behavior */
+.dropdown:hover .dropdown-menu {
+    animation: none !important;
+}
+
+/* Remove any transform effects that might cause jumping */
+.card:hover,
+.btn:hover,
+.team-card:hover {
+    transform: none !important;
+}
+
+/* Specific fix for contact messages table */
+.table tbody tr td .btn-group {
+    margin: 2px 0;
+}
+
+/* Prevent text selection on interactive elements */
+.btn, .dropdown-toggle, .dropdown-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Improved modal stability */
+.modal {
+    backdrop-filter: none !important;
+}
+
+.modal-content {
+    transform: none !important;
+}
+
+/* Touchpad-friendly button groups */
+.touchpad-friendly .btn-group {
+    position: relative;
+}
+
+.touchpad-friendly .dropdown-menu {
+    margin-top: 2px !important;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    .display-4 {
+        font-size: 2rem !important;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .sidebar-toggle {
+        display: block !important;
+    }
+    
+    .desktop-sidebar {
+        display: none !important;
+    }
+}
+
+/* ID Card Specific Styles */
+.id-card-container {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border: 2px solid #FF6600;
+}
+
+.id-card-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.id-card-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.1) 50%, transparent 60%);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Enhanced Form Styles */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: var(--accent-color);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid var(--accent-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1060;
+    min-width: 300px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar, .footer, .btn, .sidebar-toggle {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+    }
+}
+
+/* User Grid Styles */
+.user-grid-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.user-grid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: var(--accent-color);
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--accent-color);
+    color: white;
+    font-size: 24px;
+}
+
+/* Quick Action Cards */
+.quick-action-card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.quick-action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FIXED: Modal Blinking and Overlap Issues */
+.modal {
+    z-index: 1060 !important;
+}
+
+.modal-backdrop {
+    z-index: 1050 !important;
+}
+
+.modal.fade:not(.show) {
+    display: none !important;
+}
+
+.modal.show {
+    display: block !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 767.98px) {
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .btn-group .dropdown-toggle {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    /* Improve touch targets */
+    .btn, .nav-link, .dropdown-item {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid #000;
+    }
+    
+    .btn {
+        border: 2px solid;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .card, .btn {
+        transition: none;
+    }
+    
+    .spinner {
+        animation: none;
+    }
+}/* Enhanced Modal Stability */
+.modal {
+    z-index: 1060 !important;
+    backdrop-filter: none !important;
+}
+
+.modal-backdrop {
+    z-index: 1050 !important;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.modal.fade:not(.show) {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.modal.show {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+/* Prevent modal flickering */
+.modal-content {
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Improved dropdown stability */
+.dropdown-menu {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Enhanced table interactions */
+.table tbody tr {
+    cursor: default !important;
+}
+
+.table .btn-group {
+    position: relative;
+    z-index: 10;
+}
+
+/* Prevent accidental hover triggers */
+[onclick*="openMessageModal"],
+[onclick*="openNotesModal"] {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Remove any transform effects that cause layout shifts */
+.card:hover,
+.btn:hover {
+    transform: none !important;
+}
+
+/* Improved button group spacing */
+.btn-group .btn {
+    margin: 0 1px;
+}
+
+.touchpad-friendly .dropdown-menu {
+    margin-top: 2px !important;
+}
