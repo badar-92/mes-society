@@ -1,0 +1,12 @@
+/* TEAM */
+    Developer: MES Society Tech Team
+    Contact: tech@mesuol.xo.je
+    Website: https://mesuol.xo.je
+    Location: Lahore, Pakistan
+
+/* SITE */
+    Last update: 2024
+    Language: English
+    Doctype: HTML5
+    Components: PHP, MySQL, Bootstrap, JavaScript
+    Made with: Badar Ahmad for MES Society Members

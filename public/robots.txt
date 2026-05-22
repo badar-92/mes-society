@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /member/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /api/
+
+Sitemap: https://mesuol.xo.je/sitemap.php
